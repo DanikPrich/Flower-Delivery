@@ -1,0 +1,275 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1530px;
+  margin: auto;
+}
+
+@media (max-width: 1530px) {
+  .container {
+    max-width: 1199px;
+  }
+}
+@media (max-width: 1199px) {
+  .container {
+    max-width: 991px;
+  }
+}
+@media (max-width: 991px) {
+  .container {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+}
+body {
+  color: white;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 72px;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+h3 {
+  font-size: 42px;
+}
+
+h4 {
+  font-size: 36px;
+}
+
+h5 {
+  font-size: 30px;
+}
+
+h6 {
+  font-size: 22px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.button {
+  width: 263px;
+  padding: 25px 55px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.36);
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  position: relative;
+}
+.button::after, .button::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: transparrent;
+}
+.button::after {
+  border-right: 1px solid white;
+  border-top: 1px solid white;
+  top: -1px;
+  right: -1px;
+}
+.button::before {
+  border-left: 1px solid white;
+  border-bottom: 1px solid white;
+  bottom: -1px;
+  left: -1px;
+}
+
+.header {
+  padding: 10px 0px;
+  height: 70px;
+  background-color: #1A2633;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 60px;
+}
+.nav__link {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+}
+.nav__link:hover {
+  color: #227CE4;
+}
+.nav__link_active {
+  position: relative;
+}
+.nav__link_active::after {
+  content: "";
+  position: absolute;
+  top: 125%;
+  left: 50%;
+  width: 1px;
+  height: 16px;
+  background-color: white;
+}
+.nav__link_active:hover::after {
+  background-color: #227CE4;
+}
+
+.lang-switch {
+  padding: 15px 13px;
+  border: 1px solid #80828D;
+}
+
+.hero {
+  height: 880px;
+  background: url("../../img/hero/plane.jpg") right top no-repeat, url("../../img/hero/flowers.jpg") left top no-repeat;
+}
+.hero-wrapper {
+  display: flex;
+  justify-content: end;
+  padding-top: 80px;
+}
+.hero-text {
+  padding-right: 40px;
+  max-width: 750px;
+}
+.hero-text__name {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.hero-text__title {
+  position: relative;
+  margin-top: 20px;
+}
+.hero-text__title::before {
+  content: "";
+  position: absolute;
+  left: -40px;
+  top: 13px;
+  display: block;
+  width: 1px;
+  height: 58px;
+  background-color: #fff;
+}
+.hero-text__item {
+  position: relative;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
+.hero-text__item::before {
+  content: "";
+  position: absolute;
+  left: -40px;
+  top: 10px;
+  width: 5px;
+  height: 5px;
+  background-color: #9FCCFF;
+  border-radius: 50%;
+}
+.hero-text__term {
+  margin-top: 22px;
+  font-weight: 600;
+}
+.hero-contacts {
+  padding-left: 40px;
+  position: relative;
+}
+.hero-contacts::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 60px;
+  width: 1px;
+  background-color: #fff;
+}
+.hero-contacts__item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.hero-contacts__item:first-child {
+  margin-bottom: 16px;
+}
+.hero-contacts__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.hero-contacts__button {
+  margin-top: 36px;
+}
+.hero-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px;
+}
+.hero-flowers {
+  display: flex;
+  gap: 30px;
+}
+.hero-flowers__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+.hero-flowers__item:hover, .hero-flowers__item .flowers__name {
+  color: rgba(255, 255, 255, 0.5);
+}
+.hero-flowers__name {
+  margin-top: 25px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+}
+.hero-map {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 108px;
+  text-align: center;
+  min-width: 320px;
+  height: 360px;
+  background: url("../../img/hero/equador.svg") 0 0/cover no-repeat;
+}
+.hero-map__title {
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+.hero-map__descr {
+  font-size: 12px;
+  line-height: 24px;
+}/*# sourceMappingURL=style.css.map */

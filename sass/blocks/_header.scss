@@ -1,0 +1,57 @@
+.header {
+  padding: 10px 0px;
+  height: 70px;
+  background-color: #1A2633;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 60px;
+
+  &__link {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+
+    &:hover {
+      color: $primary;
+    }
+
+    
+
+    &_active {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 125%;
+        left: 50%;
+        width: 1px;
+        height: 16px;
+        background-color: white;
+      }
+
+      &:hover::after {
+        background-color: $primary;
+      }
+
+    }
+  }
+}
+
+.lang-switch {
+  padding: 15px 13px;
+  border: 1px solid #80828D;
+}
