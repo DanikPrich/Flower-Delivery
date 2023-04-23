@@ -149,4 +149,10 @@
 }
 
 
+@media (min-width: 1920px) {
+  .hero {
+    background: url('../img/hero/plane.jpg') right top no-repeat, url('../img/hero/flowers5.jpg') left top/contain no-repeat;
+  }
+}
+
 

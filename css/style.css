@@ -360,6 +360,11 @@ input[type=radio]:checked::before {
   line-height: 24px;
 }
 
+@media (min-width: 1920px) {
+  .hero {
+    background: url("../img/hero/plane.jpg") right top no-repeat, url("../img/hero/flowers5.jpg") left top/contain no-repeat;
+  }
+}
 .about {
   padding-bottom: 120px;
   background-color: #1A2633;
@@ -426,6 +431,7 @@ input[type=radio]:checked::before {
   height: 847px;
   background-image: url("../../img/from/plane-bg.png");
   background-color: #041D2C;
+  background-size: cover;
 }
 .from-wrapper {
   display: flex;
@@ -563,4 +569,83 @@ input[type=radio]:checked::before {
   gap: 16.5px;
   width: 50%;
   margin-bottom: 20px;
+}
+
+.tariff {
+  padding: 120px 0;
+  background-image: url("../../img/tariff/tariff-background.png");
+  background-color: #041D2C;
+  background-size: cover;
+}
+.tariff-list {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.tariff-card {
+  position: relative;
+  padding: 60px 40px;
+  width: 490px;
+  height: 266px;
+  background: #23303F;
+  border: 1px solid rgba(85, 122, 161, 0.3);
+}
+.tariff-card-download {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 490px;
+  height: 266px;
+  background: url("../img/tariff/download-bg.png") 0 0/cover;
+}
+.tariff-card__wrapper {
+  display: flex;
+  margin-bottom: 42px;
+}
+.tariff-card__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.tariff-card__title {
+  line-height: 37px;
+  color: #9FCCFF;
+}
+.tariff-card__descr {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #BCC9DA;
+}
+.tariff-card__footer {
+  font-size: 16px;
+  line-height: 22px;
+  color: #BCC9DA;
+}
+.tariff-card::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 1px;
+  height: 50px;
+  background: #9FCCFF;
+  left: -1px;
+  top: 40%;
+  transform: translateY(-50%);
+}
+.tariff-img {
+  position: relative;
+  margin-right: 30px;
+  width: 60px;
+  height: 82px;
+}
+.tariff-img__back {
+  position: absolute;
+  z-index: 0;
+}
+.tariff-img__front {
+  position: absolute;
+  top: 25px;
+  left: -10px;
+  z-index: 1;
 }/*# sourceMappingURL=style.css.map */
