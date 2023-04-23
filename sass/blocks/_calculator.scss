@@ -1,0 +1,39 @@
+.calculator {
+  padding: 120px 0 120px 0;
+  background: #16212E;
+
+  &-wrapper {
+    display: flex;
+    gap: 80px;
+  }
+
+  &-visualization {
+    padding: 60px 50px 30px 47px;
+    background: #23303F;
+    border: 1px solid rgba(85, 122, 161, 0.2);
+  }
+
+  &-form {
+    &__stepper {
+      margin-top: 30px;
+      max-width: 570px;
+    }
+    &-radios {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      & label {
+        font-size: 14px;
+        line-height: 24px;
+        cursor: pointer;
+      }
+    }
+    &-radio {
+      display: flex;
+      align-items: center;
+      gap: 16.5px;
+      width: 50%;
+      margin-bottom: 20px;
+    }
+  }
+}
