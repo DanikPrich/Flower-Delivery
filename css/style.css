@@ -235,7 +235,7 @@ input[type=radio]:checked::before {
 
 .hero {
   height: 879px;
-  background: url("../../img/hero/plane.jpg") right top no-repeat, url("../../img/hero/flowers.jpg") left top no-repeat;
+  background: url("../img/hero/plane.jpg") right top no-repeat, url("../img/hero/flowers.jpg") left top no-repeat;
 }
 .hero-wrapper {
   display: flex;
@@ -348,7 +348,7 @@ input[type=radio]:checked::before {
   text-align: center;
   min-width: 320px;
   height: 360px;
-  background: url("../../img/hero/equador.svg") 0 0/cover no-repeat;
+  background: url("../img/hero/equador.svg") 0 0/cover no-repeat;
 }
 .hero-map__title {
   font-size: 16px;
