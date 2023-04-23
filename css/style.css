@@ -71,7 +71,12 @@ img {
 .section-title {
   text-align: center;
 }
-.section__name {
+.section__title {
+  line-height: 60px;
+  margin-bottom: 55px;
+}
+
+.buisness-name {
   font-weight: 500;
   font-size: 12px;
   line-height: 15px;
@@ -79,10 +84,6 @@ img {
   color: #9FCCFF;
   letter-spacing: 0.1em;
   opacity: 0.7;
-}
-.section__title {
-  line-height: 60px;
-  margin-bottom: 55px;
 }
 
 .button {
@@ -367,4 +368,113 @@ img {
   top: 25px;
   left: -10px;
   z-index: 1;
+}
+
+.from {
+  position: relative;
+  height: 847px;
+  background-image: url("../../img/from/plane-bg.png");
+  background-color: #041D2C;
+}
+.from-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 120px;
+}
+.from-text {
+  max-width: 570px;
+}
+.from-text__name {
+  margin-bottom: 30px;
+}
+.from-text__title {
+  line-height: 60px;
+  margin: 30px 0 55px 0;
+}
+.from-text__descr {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 242px;
+  margin-bottom: 90px;
+}
+.from-text__descr span {
+  font-size: 16px;
+  line-height: 24px;
+  color: #BCC9DA;
+}
+.from-text__descr strong {
+  color: white;
+}
+.from-img {
+  position: relative;
+  top: 50px;
+}
+
+.countries {
+  position: absolute;
+  top: 0px;
+  left: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  max-width: 170px;
+  transform: rotate(90deg);
+  transform-origin: top left;
+}
+
+.country {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.country__strip {
+  width: 50px;
+  height: 1px;
+  margin-right: 17px;
+  background: #BCC9DA;
+  opacity: 0.36;
+}
+.country__name {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #BCC9DA;
+  opacity: 0.36;
+}
+.country__descr {
+  position: absolute;
+  top: -25px;
+  left: 75px;
+  display: none;
+  width: 190px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #BCC9DA;
+  transform: rotate(-90deg);
+}
+.country__descr strong {
+  color: white;
+  opacity: 1;
+}
+.country__descr_active {
+  display: block;
+}
+.country__active .country__name {
+  color: #227CE4;
+  opacity: 1;
+}
+.country__active .country__strip {
+  background-color: #227CE4;
+  opacity: 1;
+}
+.country:hover .country__name {
+  color: white;
+  opacity: 1;
+}
+.country:hover .country__strip {
+  background-color: white;
+  opacity: 1;
 }/*# sourceMappingURL=style.css.map */
