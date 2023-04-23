@@ -1,0 +1,69 @@
+.about {
+  padding-bottom: 120px;
+  background-color: #1A2633;
+
+  &-list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+  &-card {
+    position: relative;
+    display: flex;
+    padding: 40px;
+    width: 490px;
+    height: 170px;
+    background: #23303F;
+    border: 1px solid rgba(85, 122, 161, 0.3);
+
+    &__text {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    &__title {
+      line-height: 37px;
+      color: #9FCCFF;
+    }
+
+    &__descr {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 22px;
+
+      color: #BCC9DA;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 1px;
+      height: 50px;
+      background: #9FCCFF;
+      left: -1px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  &-img {
+    position: relative;
+    margin-right: 30px;
+    width: 60px;
+    height: 82px;
+
+    &__back {
+      position: absolute;
+      z-index: 0;
+    }
+    &__front {
+      position: absolute;
+      top: 25px;
+      left: -10px;
+      z-index: 1;
+    }
+  }
+}
