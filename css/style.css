@@ -76,6 +76,7 @@ img {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   position: relative;
+  cursor: pointer;
 }
 .button::after, .button::before {
   position: absolute;
@@ -96,6 +97,16 @@ img {
   border-bottom: 1px solid white;
   bottom: -1px;
   left: -1px;
+}
+.button:hover:after, .button:hover:before {
+  content: none;
+}
+.button:hover {
+  border: 1px solid white;
+}
+.button:active {
+  background-color: #fff;
+  color: #227CE4;
 }
 
 .header {
@@ -146,6 +157,7 @@ img {
 .lang-switch {
   padding: 15px 13px;
   border: 1px solid #80828D;
+  cursor: pointer;
 }
 
 .hero {
@@ -258,7 +270,8 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 108px;
+  gap: 14px;
+  padding-top: 90px;
   text-align: center;
   min-width: 320px;
   height: 360px;

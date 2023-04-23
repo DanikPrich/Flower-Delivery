@@ -39,6 +39,7 @@ img
   text-transform: uppercase
   letter-spacing: 0.1em
   position: relative
+  cursor: pointer
   
   &::after, &::before
     position: absolute
@@ -58,3 +59,12 @@ img
     border-bottom: 1px solid white
     bottom: -1px
     left: -1px
+
+  &:hover:after, &:hover:before
+    content: none
+  &:hover 
+    border: 1px solid white
+
+  &:active 
+    background-color: #fff
+    color: $primary  
