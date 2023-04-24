@@ -235,6 +235,10 @@ input[type=checkbox]:checked::before {
     font-size: 32px;
     line-height: 46px;
   }
+  h2 {
+    font-size: 32px;
+    line-height: 42px;
+  }
   .section {
     padding-top: 62px;
   }
@@ -245,6 +249,20 @@ input[type=checkbox]:checked::before {
     line-height: 60px;
     font-size: 32px;
     margin-bottom: 55px;
+  }
+  .button {
+    height: 39px;
+    padding: 13px 32px;
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .button::before {
+    height: 20px;
+    width: 20px;
+  }
+  .button::after {
+    height: 20px;
+    width: 20px;
   }
 }
 .header {
@@ -534,19 +552,7 @@ input[type=checkbox]:checked::before {
     line-height: 24px;
   }
   .hero-contacts__button {
-    height: 39px;
-    padding: 13px 32px;
     margin-top: 36px;
-    font-size: 10px;
-    line-height: 12px;
-  }
-  .hero-contacts__button::before {
-    height: 20px;
-    width: 20px;
-  }
-  .hero-contacts__button::after {
-    height: 20px;
-    width: 20px;
   }
   .hero-bottom {
     display: flex;
@@ -773,6 +779,7 @@ input[type=checkbox]:checked::before {
 .from {
   position: relative;
   height: 847px;
+  padding-top: 120px;
   background-image: url("../../img/from/plane-bg.png");
   background-color: #041D2C;
   background-size: cover;
@@ -780,7 +787,6 @@ input[type=checkbox]:checked::before {
 .from-wrapper {
   display: flex;
   justify-content: space-between;
-  padding-top: 120px;
 }
 .from-text {
   max-width: 570px;
@@ -809,6 +815,7 @@ input[type=checkbox]:checked::before {
 }
 .from-img {
   position: relative;
+  z-index: 1;
   top: 50px;
 }
 
@@ -816,6 +823,7 @@ input[type=checkbox]:checked::before {
   position: absolute;
   top: 0px;
   left: 70%;
+  z-index: 2;
   display: flex;
   flex-direction: column;
   gap: 60px;
@@ -880,6 +888,145 @@ input[type=checkbox]:checked::before {
   opacity: 1;
 }
 
+@media (max-width: 1530px) {
+  .from {
+    padding-top: 90px;
+  }
+  .from-text {
+    max-width: 368px;
+  }
+  .from-text__name {
+    font-size: rgb(101, 168, 255);
+    line-height: 12px;
+  }
+  .from-text__title {
+    font-size: 32px;
+    margin: 15px 0 25px 0;
+  }
+  .from-text__descr {
+    height: 242px;
+    margin-bottom: 40px;
+  }
+  .from-text__descr span {
+    font-size: 13px;
+  }
+  .from-img {
+    position: relative;
+    top: 0px;
+    align-self: end;
+    width: 565px;
+  }
+  .countries {
+    left: 90%;
+    gap: 45px;
+  }
+}
+@media (max-width: 1000px) {
+  .from {
+    position: relative;
+    padding-top: 60px;
+    background-image: url("../../img/from/plane-bg.png");
+    background-color: #041D2C;
+    background-size: cover;
+  }
+  .from-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .from-text {
+    max-width: initial;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  .from-text__name {
+    font-size: 8px;
+    line-height: 10px;
+    margin-bottom: 30px;
+  }
+  .from-text__title {
+    font-size: 28px;
+    line-height: 32px;
+    margin: 10px 0 30px 0;
+  }
+  .from-text__descr {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+    height: initial;
+    margin-bottom: 30px;
+    text-align: left;
+  }
+  .from-text__descr span {
+    font-size: 13px;
+    line-height: 20px;
+    color: #BCC9DA;
+  }
+  .from-text__descr strong {
+    color: white;
+  }
+  .from-text button {
+    height: 58px;
+  }
+  .from-img {
+    position: relative;
+    top: initial;
+    bottom: 0;
+  }
+  .countries {
+    position: absolute;
+    top: initial;
+    bottom: 0;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 170px;
+    transform: translateX(120%) rotate(-90deg);
+    transform-origin: bottom left;
+  }
+  .country {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  .country__strip {
+    width: 50px;
+    height: 1px;
+    margin-right: 17px;
+    background: #BCC9DA;
+    opacity: 0.36;
+  }
+  .country__name {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #BCC9DA;
+    opacity: 0.36;
+  }
+  .country__descr {
+    position: absolute;
+    z-index: 15;
+    top: -25px;
+    left: 75px;
+    display: none;
+    width: 190px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #BCC9DA;
+    transform: rotate(90deg);
+  }
+  .country__descr strong {
+    color: white;
+    opacity: 1;
+  }
+  .country__descr_active {
+    display: block;
+  }
+}
 .calculator {
   padding: 120px 0 120px 0;
   background: #16212E;
