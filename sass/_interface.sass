@@ -28,6 +28,9 @@ h6
 img
   max-width: 100%  
 
+a
+  color: white
+
 .section
   padding-top: 120px
   &-title
@@ -109,6 +112,9 @@ img
     line-height: 24px
     color: #BCC9DA
 
+input 
+  cursor: pointer
+
 input[type="radio"]
   display: grid
   place-content: center
@@ -131,4 +137,37 @@ input[type="radio"]::before
   transition: 120ms transform ease-in-out
 
 input[type="radio"]:checked::before
+  transform: scale(1)
+
+
+input[type="text"]
+  padding-bottom: 14px
+  font-size: 14px
+  line-height: 17px
+  outline: none
+  color: white
+  background-color: rgba(0,0,0,0)
+  border: none
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3)
+input[type="text"]:focus 
+   border-bottom: 1px solid white
+
+
+input[type="checkbox"]
+  display: grid
+  place-content: center
+  appearance: none
+  height: 22px
+  width: 22px
+  border: 1px solid rgba(255, 255, 255, 0.3)
+
+input[type="checkbox"]::before
+  content: ''
+  display: block
+  height: 13px
+  width: 13px
+  background-color: rgba(255, 255, 255, 0.6)
+  transform: scale(0)
+  transition: .1s transform ease-in-out
+input[type="checkbox"]:checked::before
   transform: scale(1)
