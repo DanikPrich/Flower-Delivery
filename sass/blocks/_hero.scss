@@ -1,15 +1,15 @@
 .hero {
   height: 879px;
-  background: url('../img/hero/plane.jpg') right top no-repeat, url('../img/hero/flowers.jpg') left top no-repeat;
+  padding-top: 80px;
+  background: url('../img/hero/plane.jpg') right center no-repeat, url('../img/hero/flowers.jpg') left center no-repeat;
 
   &-wrapper {
     display: flex;
     justify-content: end;
-    padding-top: 80px;
   }
 
   &-text {
-    padding-right: 40px;
+    margin-right: 40px;
     max-width: 750px;
     &__name {
       font-weight: 400;
@@ -152,6 +152,130 @@
 @media (min-width: 1920px) {
   .hero {
     background: url('../img/hero/plane.jpg') right top no-repeat, url('../img/hero/flowers5.jpg') left top/contain no-repeat;
+  }
+}
+
+@media (max-width: 1200px) {
+  .hero {
+    height: 466px;
+    padding-top: 57px;
+    background: url('../img/hero/plane.jpg') right center/cover no-repeat;
+  
+    &-wrapper {
+      justify-content: space-between;
+    }
+  
+    &-text {
+      margin-right: 100px;
+      max-width: 470px;
+      &__name {
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 12px;
+      }
+      &__title {
+        margin: 15px 0 9px 0;
+        font-size: 32px;
+        &::before {
+          top: -25px;
+        }
+      }
+      &__item {
+        // position: relative;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 16px;
+  
+        &::before {
+          left: -40px;
+        }
+      } 
+      &__term {
+        margin-top: 5px;
+        font-weight: 600;
+        line-height: 26px;
+      }
+    }
+  
+    &-contacts {
+      padding-left: 14px;
+      &__item {
+        gap: 16px;
+  
+        &:first-child {
+          margin-bottom: 9px;
+        }
+      }
+  
+      &__text {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 24px;
+      }
+  
+      &__button {
+        height: 39px;
+        padding: 13px 32px;
+        margin-top: 36px;
+        font-size: 10px;
+        line-height: 12px;
+      }
+    }
+  
+    &-bottom {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 15px;
+    }
+  
+    &-flowers {
+      display: flex;
+      gap: 16px;
+  
+      &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+  
+        &:hover, .flowers__name {
+          color: rgba(255, 255, 255, 0.5);
+        }
+
+      }
+      &__img {
+        width: 85px;
+      }
+      
+      &__name {
+        margin-top: 19px;
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 24px;
+      }
+    }
+  
+    &-map {
+      position: relative;
+      top: -40px;
+      gap: 0;
+  
+      padding-top: 60px;
+      
+      min-width: 207px;
+      height: 232px;
+  
+      &__title {
+        font-size: 12px;
+        line-height: 24px;
+        text-transform: uppercase;
+      }
+  
+      &__descr {
+        font-size: 8px;
+        line-height: 24px;
+      }
+    }
   }
 }
 

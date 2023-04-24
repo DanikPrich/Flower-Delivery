@@ -21,7 +21,7 @@
     max-width: 975px;
   }
 }
-@media (max-width: 975px) {
+@media (max-width: 990px) {
   .container {
     max-width: 100%;
     padding: 0 20px;
@@ -230,6 +230,12 @@ input[type=checkbox]:checked::before {
   transform: scale(1);
 }
 
+@media (max-width: 1200px) {
+  h1 {
+    font-size: 32px;
+    line-height: 46px;
+  }
+}
 .header {
   padding: 10px 0px;
   height: 70px;
@@ -334,15 +340,15 @@ input[type=checkbox]:checked::before {
 }
 .hero {
   height: 879px;
-  background: url("../img/hero/plane.jpg") right top no-repeat, url("../img/hero/flowers.jpg") left top no-repeat;
+  padding-top: 80px;
+  background: url("../img/hero/plane.jpg") right center no-repeat, url("../img/hero/flowers.jpg") left center no-repeat;
 }
 .hero-wrapper {
   display: flex;
   justify-content: end;
-  padding-top: 80px;
 }
 .hero-text {
-  padding-right: 40px;
+  margin-right: 40px;
   max-width: 750px;
 }
 .hero-text__name {
@@ -462,6 +468,110 @@ input[type=checkbox]:checked::before {
 @media (min-width: 1920px) {
   .hero {
     background: url("../img/hero/plane.jpg") right top no-repeat, url("../img/hero/flowers5.jpg") left top/contain no-repeat;
+  }
+}
+@media (max-width: 1200px) {
+  .hero {
+    height: 466px;
+    padding-top: 57px;
+    background: url("../img/hero/plane.jpg") right center/cover no-repeat;
+  }
+  .hero-wrapper {
+    justify-content: space-between;
+  }
+  .hero-text {
+    margin-right: 100px;
+    max-width: 470px;
+  }
+  .hero-text__name {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .hero-text__title {
+    margin: 15px 0 9px 0;
+    font-size: 32px;
+  }
+  .hero-text__title::before {
+    top: -25px;
+  }
+  .hero-text__item {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 16px;
+  }
+  .hero-text__item::before {
+    left: -40px;
+  }
+  .hero-text__term {
+    margin-top: 5px;
+    font-weight: 600;
+    line-height: 26px;
+  }
+  .hero-contacts {
+    padding-left: 14px;
+  }
+  .hero-contacts__item {
+    gap: 16px;
+  }
+  .hero-contacts__item:first-child {
+    margin-bottom: 9px;
+  }
+  .hero-contacts__text {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+  }
+  .hero-contacts__button {
+    height: 39px;
+    padding: 13px 32px;
+    margin-top: 36px;
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .hero-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+  .hero-flowers {
+    display: flex;
+    gap: 16px;
+  }
+  .hero-flowers__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+  }
+  .hero-flowers__item:hover, .hero-flowers__item .flowers__name {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .hero-flowers__img {
+    width: 85px;
+  }
+  .hero-flowers__name {
+    margin-top: 19px;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 24px;
+  }
+  .hero-map {
+    position: relative;
+    top: -40px;
+    gap: 0;
+    padding-top: 60px;
+    min-width: 207px;
+    height: 232px;
+  }
+  .hero-map__title {
+    font-size: 12px;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+  .hero-map__descr {
+    font-size: 8px;
+    line-height: 24px;
   }
 }
 .about {
