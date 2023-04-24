@@ -131,9 +131,9 @@
     padding-top: 90px;
     
     text-align: center;
-    min-width: 320px;
+    width: 320px;
     height: 360px;
-    background: url('../img/hero/equador.svg') 0 0/cover no-repeat;
+    background: url('../img/hero/equador.svg') 0 0/contain no-repeat;
 
     &__title {
       font-size: 16px;
@@ -219,6 +219,14 @@
         margin-top: 36px;
         font-size: 10px;
         line-height: 12px;
+        &::before {
+          height: 20px;
+          width: 20px;
+        }
+        &::after {
+          height: 20px;
+          width: 20px;
+        }
       }
     }
   
@@ -262,7 +270,7 @@
   
       padding-top: 60px;
       
-      min-width: 207px;
+      width: 207px;
       height: 232px;
   
       &__title {
@@ -278,5 +286,106 @@
     }
   }
 }
+
+@media (max-width: 850px) {
+  .hero {
+    height: 550px;
+  
+  
+    &-text {
+      margin-right: 0px;
+    }
+  
+    &-contacts {
+  
+      &__button {
+
+        &::before {
+          height: 20px;
+          width: 20px;
+        }
+        &::after {
+          height: 20px;
+          width: 20px;
+        }
+      }
+    }
+  
+    &-bottom {
+      align-items: center;
+    }
+  
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    height: 600px;
+    padding-top: 35px;
+  
+    &-wrapper {
+      flex-wrap: wrap;
+    }
+  
+    &-contacts {
+      padding-left: 0;
+      &__item {
+        display: none;
+  
+      }
+  
+     
+      &__button {
+        margin-top: 30px;
+      }
+      &::before {
+        display: none;
+      }
+    }
+  
+    &-bottom {
+      justify-content: space-around;
+      margin-top: 60px;
+    }
+  
+    &-flowers {
+      &__item {
+        &:nth-child(2) {
+          display: none;
+        }
+        &:nth-child(3) {
+          display: none;
+        }
+      }
+      &__img {
+        width: 90px;
+      }
+    }
+  
+    &-map {
+      top: 0px;
+  
+      padding-top: 23px;
+      
+      width: 120px;
+      height: 135px;
+
+      & img {
+        width: 10px;
+      }
+  
+      &__title {
+        font-size: 10px;
+        line-height: 12px;
+        margin-bottom: 12px;
+      }
+  
+      &__descr {
+        line-height: 12px;
+      }
+    }
+  }
+}
+
 
 
