@@ -235,6 +235,17 @@ input[type=checkbox]:checked::before {
     font-size: 32px;
     line-height: 46px;
   }
+  .section {
+    padding-top: 62px;
+  }
+  .section-title {
+    text-align: center;
+  }
+  .section__title {
+    line-height: 60px;
+    font-size: 32px;
+    margin-bottom: 55px;
+  }
 }
 .header {
   padding: 10px 0px;
@@ -713,6 +724,52 @@ input[type=checkbox]:checked::before {
   z-index: 1;
 }
 
+@media (max-width: 1530px) {
+  .about-list {
+    justify-content: center;
+    gap: 17px;
+  }
+  .about-card {
+    padding: 30px;
+    width: 310px;
+    height: 138px;
+  }
+  .about-card__title {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .about-card__descr {
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .about-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 22px;
+    width: 38px;
+    height: 52px;
+  }
+}
+@media (max-width: 400px) {
+  .about-list {
+    gap: 20px;
+  }
+  .about-card {
+    padding: 24px;
+    width: 290px;
+    height: 123px;
+  }
+  .about-card__title {
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .about-img {
+    margin-right: 20px;
+    width: 46px;
+    height: 64px;
+  }
+}
 .from {
   position: relative;
   height: 847px;
