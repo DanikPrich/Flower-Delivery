@@ -761,4 +761,61 @@ input[type=checkbox]:checked::before {
 .order-img-second {
   background: url("../img/order/flowers2.png") 0 0/cover no-repeat;
   width: 25%;
+}
+
+.footer {
+  min-height: 130px;
+  background: #1A2633;
+  padding: 40px 0;
+}
+.footer-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px 145px;
+}
+.footer-nav__link {
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #BCC9DA;
+  opacity: 0.8;
+}
+.footer-nav__link:hover {
+  color: #227CE4;
+  opacity: 1;
+}
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 60px;
+}
+.footer-contacts__img {
+  margin-right: 14px;
+}
+.footer-contacts__item {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 24px;
+  color: #BCC9DA;
+}
+.footer-copyright {
+  display: flex;
+  height: 60px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer-copyright span {
+  font-size: 14px;
+  line-height: 24px;
+  color: #BCC9DA;
 }/*# sourceMappingURL=style.css.map */
