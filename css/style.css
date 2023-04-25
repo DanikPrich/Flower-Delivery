@@ -1578,6 +1578,8 @@ input[type=checkbox]:checked::before {
   background: url("/img/popup/close.svg") 0 0/contain;
 }
 .popup-img {
+  background: url("/img/popup/popup.jpg") center center/cover no-repeat;
+  width: 40%;
   height: 582px;
 }
 .popup-form {
@@ -1586,7 +1588,7 @@ input[type=checkbox]:checked::before {
   justify-content: space-between;
   max-width: 420px;
   margin: 60px auto;
-  padding: 20px;
+  padding: 0 20px;
 }
 .popup-form__title {
   font-size: 42px;
@@ -1617,4 +1619,82 @@ input[type=checkbox]:checked::before {
   margin: 150px auto;
   background: #23303F;
   border: 1px solid rgba(85, 122, 161, 0.3);
+}
+
+@media (max-width: 960px) {
+  .popup-card {
+    flex-direction: column;
+    max-width: 540px;
+  }
+  .popup-img {
+    height: 292px;
+    width: 100%;
+  }
+  .popup-form {
+    height: 520px;
+    text-align: center;
+    justify-content: start;
+    margin-bottom: 0;
+  }
+  .popup-form__title {
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 10px;
+  }
+  .popup-form__description {
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 80px;
+  }
+  .popup-form__input {
+    margin-bottom: 40px;
+  }
+  .popup-form__checkbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 60px;
+    text-align: left;
+  }
+  .popup-form button {
+    align-self: center;
+    width: 260px;
+    height: 65px;
+  }
+}
+@media (max-width: 460px) {
+  .popup-card {
+    flex-direction: column;
+    max-width: 290px;
+  }
+  .popup-img {
+    height: 160px;
+  }
+  .popup-form {
+    height: auto;
+    margin: 0;
+    padding: 28px;
+  }
+  .popup-form__title {
+    font-size: 18px;
+    line-height: 60px;
+  }
+  .popup-form__description {
+    font-size: 10px;
+    line-height: 16px;
+    margin-bottom: 27px;
+  }
+  .popup-form__input {
+    margin-bottom: 30px;
+  }
+  .popup-form__checkbox {
+    gap: 22px;
+    margin-bottom: 48px;
+    font-size: 8px;
+    line-height: 16px;
+  }
+  .popup-form button {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
