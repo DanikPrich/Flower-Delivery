@@ -801,7 +801,7 @@ input[type=checkbox]:checked::before {
 }
 .from {
   position: relative;
-  height: 847px;
+  height: 858px;
   padding-top: 120px;
   background-image: url("../../img/from/plane-bg.png");
   background-color: #041D2C;
@@ -909,6 +909,10 @@ input[type=checkbox]:checked::before {
 .country:hover .country__strip {
   background-color: white;
   opacity: 1;
+}
+
+.country-description {
+  display: none;
 }
 
 @media (max-width: 1530px) {
@@ -1048,6 +1052,22 @@ input[type=checkbox]:checked::before {
   }
   .country__descr_active {
     display: block;
+  }
+}
+@media (max-width: 1000px) {
+  .country__descr_active {
+    display: none;
+  }
+  .country-description {
+    display: block;
+    margin-top: 17px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #BCC9DA;
+  }
+  .country-description strong {
+    color: white;
+    opacity: 1;
   }
 }
 .calculator {
