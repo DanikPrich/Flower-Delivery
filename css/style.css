@@ -1552,4 +1552,62 @@ input[type=checkbox]:checked::before {
   .footer-copyright {
     gap: 12px;
   }
+}
+.popup {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 16;
+  background: rgba(0, 0, 0, 0.7);
+  visibility: visible;
+  opacity: 1;
+}
+.popup-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 17;
+  display: block;
+  height: 15px;
+  width: 15px;
+  background: url("/img/popup/close.svg") 0 0/contain;
+}
+.popup-img {
+  height: 582px;
+}
+.popup-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 420px;
+  margin: 60px auto;
+  padding: 20px;
+}
+.popup-form__title {
+  font-size: 42px;
+  line-height: 60px;
+}
+.popup-form__description {
+  font-size: 16px;
+  line-height: 24px;
+}
+.popup-form__checkbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+.popup-form button {
+  width: 100%;
+}
+
+.popup-card {
+  position: relative;
+  display: flex;
+  max-width: 1010px;
+  margin: 150px auto;
+  background: #23303F;
+  border: 1px solid rgba(85, 122, 161, 0.3);
 }/*# sourceMappingURL=style.css.map */
