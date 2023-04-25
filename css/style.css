@@ -1614,10 +1614,10 @@ input[type=checkbox]:checked::before {
   display: block;
   height: 15px;
   width: 15px;
-  background: url("/img/popup/close.svg") 0 0/contain;
+  background: url("../img/popup/close.svg") 0 0/contain;
 }
 .popup-img {
-  background: url("/img/popup/popup.jpg") center center/cover no-repeat;
+  background: url("../img/popup/popup.jpg") center center/cover no-repeat;
   width: 40%;
   height: 582px;
 }
