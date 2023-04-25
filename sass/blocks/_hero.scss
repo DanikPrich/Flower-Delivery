@@ -88,6 +88,9 @@
     }
 
     &__button {
+      display: block;
+      text-decoration: none;
+      text-align: center;
       margin-top: 36px;
     }
   }

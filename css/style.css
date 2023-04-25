@@ -470,6 +470,9 @@ input[type=checkbox]:checked::before {
   line-height: 24px;
 }
 .hero-contacts__button {
+  display: block;
+  text-decoration: none;
+  text-align: center;
   margin-top: 36px;
 }
 .hero-bottom {
@@ -1561,8 +1564,8 @@ input[type=checkbox]:checked::before {
   right: 0;
   z-index: 16;
   background: rgba(0, 0, 0, 0.7);
-  visibility: visible;
-  opacity: 1;
+  visibility: hidden;
+  opacity: 0;
 }
 .popup-close {
   position: absolute;
@@ -1601,6 +1604,10 @@ input[type=checkbox]:checked::before {
 }
 .popup-form button {
   width: 100%;
+}
+.popup:target {
+  visibility: visible;
+  opacity: 1;
 }
 
 .popup-card {

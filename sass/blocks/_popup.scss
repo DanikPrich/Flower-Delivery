@@ -6,8 +6,8 @@
   right: 0;
   z-index:16;
   background: rgba(0, 0, 0, 0.7);
-  visibility: visible;
-  opacity: 1;
+  visibility: hidden;
+  opacity: 0;
 
   &-close {
     position: absolute;
@@ -53,6 +53,11 @@
     & button {
       width: 100%;
     }
+  }
+
+  &:target {
+    visibility: visible;
+    opacity: 1;
   }
 
 }
