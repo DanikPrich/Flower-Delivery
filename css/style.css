@@ -264,6 +264,29 @@ input[type=checkbox]:checked::before {
     height: 20px;
     width: 20px;
   }
+  .buisness-name {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .form-stepper__text {
+    font-size: 13px;
+  }
+}
+@media (max-width: 990px) {
+  .buisness-name {
+    font-size: 8px;
+    line-height: 10px;
+  }
+  .form-stepper__number {
+    width: 38px;
+    height: 38px;
+    padding: 9px 12px;
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .form-stepper__text {
+    line-height: 20px;
+  }
 }
 .header {
   padding: 10px 0px;
@@ -1062,6 +1085,32 @@ input[type=checkbox]:checked::before {
   margin-bottom: 20px;
 }
 
+@media (max-width: 990px) {
+  .calculator {
+    padding: 60px 0;
+  }
+  .calculator-wrapper {
+    justify-content: center;
+    text-align: center;
+  }
+  .calculator-visualization {
+    display: none;
+  }
+  .calculator-form__title {
+    margin-top: 10px;
+  }
+  .calculator-form-radios {
+    margin-top: 24px;
+  }
+  .calculator-form-radios label {
+    font-size: 13px;
+    line-height: 20px;
+    cursor: pointer;
+  }
+  .calculator-form__stepper:last-child {
+    display: none;
+  }
+}
 .tariff {
   padding: 120px 0;
   background-image: url("../../img/tariff/tariff-background.png");

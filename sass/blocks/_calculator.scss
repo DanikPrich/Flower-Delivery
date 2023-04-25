@@ -37,3 +37,36 @@
     }
   }
 }
+
+@media (max-width: 990px) { 
+  .calculator {
+    padding: 60px 0;
+    &-wrapper {
+      justify-content: center;
+      text-align: center;
+    }
+    &-visualization {
+      display: none;
+    }
+
+    &-form {
+      &__title {
+        margin-top: 10px;
+      }
+      &-radios {
+        margin-top: 24px;
+        & label {
+          font-size: 13px;
+          line-height: 20px;
+          cursor: pointer;
+        }
+      }
+      &__stepper {
+        &:last-child {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
