@@ -1285,8 +1285,8 @@ input[type=checkbox]:checked::before {
   height: 585px;
 }
 .order-form {
-  background: url("../img/order/background.png") 0 0/cover no-repeat;
-  width: 50%;
+  background: url("../img/order/background.png") right center/cover no-repeat;
+  width: 60%;
   padding: 120px 0;
 }
 .order-form__container {
@@ -1336,15 +1336,102 @@ input[type=checkbox]:checked::before {
   font-size: 14px;
   line-height: 22px;
 }
-.order-img-first {
-  background: url("../img/order/flowers1.png") 0 0/cover no-repeat;
-  width: 25%;
+.order-img {
+  display: flex;
+  width: 40%;
 }
-.order-img-second {
-  background: url("../img/order/flowers2.png") 0 0/cover no-repeat;
-  width: 25%;
+.order-img__first {
+  background: url("../img/order/flowers1.png") center center/cover no-repeat;
+  width: 50%;
+}
+.order-img__second {
+  background: url("../img/order/flowers2.png") center center/cover no-repeat;
+  width: 50%;
 }
 
+@media (max-width: 1200px) {
+  .order__wrapper {
+    height: 650px;
+  }
+  .order-form {
+    width: 60%;
+    padding: 85px 0;
+  }
+  .order-form__container {
+    max-width: 417px;
+    text-align: center;
+  }
+  .order-form__title {
+    font-size: 32px;
+    margin: 16px 0 7px 0;
+  }
+  .order-form__description {
+    margin-bottom: 80px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .order-form__inputs {
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+  .order-form__inputs input {
+    width: 100%;
+  }
+  .order-form__footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+  }
+  .order-form__checkbox {
+    width: 100%;
+  }
+  .order-form__checkbox span {
+    width: auto;
+    text-align: left;
+    font-size: 15px;
+    line-height: 18px;
+  }
+}
+@media (max-width: 900px) {
+  .order__wrapper {
+    flex-direction: column;
+    height: auto;
+  }
+  .order-form {
+    width: 100%;
+  }
+  .order-img {
+    width: 100%;
+  }
+  .order-img__first {
+    height: 194px;
+    width: 50%;
+  }
+  .order-img__second {
+    height: 194px;
+    width: 50%;
+  }
+}
+@media (max-width: 530px) {
+  .order-form__container {
+    padding: 0 20px;
+  }
+  .order-form__title {
+    font-size: 28px;
+    line-height: 32px;
+    margin: 10px 0 12px 0;
+  }
+  .order-form__description {
+    font-size: 13px;
+  }
+  .order-form__footer button {
+    width: 100%;
+  }
+  .order-form__checkbox span {
+    font-size: 12px;
+  }
+}
 .footer {
   min-height: 130px;
   background: #1A2633;

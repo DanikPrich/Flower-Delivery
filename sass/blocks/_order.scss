@@ -6,8 +6,8 @@
   }
 
   &-form {
-    background: url('../img/order/background.png') 0 0/cover no-repeat;
-    width: 50%;
+    background: url('../img/order/background.png') right center/cover no-repeat;
+    width: 60%;
     padding: 120px 0;
 
     &__container {
@@ -65,13 +65,124 @@
   }
 
   &-img {
-    &-first {
-      background: url('../img/order/flowers1.png') 0 0/cover no-repeat;
-      width: 25%;
+    display: flex;
+    width: 40%;
+
+    &__first {
+      background: url('../img/order/flowers1.png') center center/cover no-repeat;
+      width: 50%;
     }
-    &-second {
-      background: url('../img/order/flowers2.png') 0 0/cover no-repeat;
-      width: 25%;
+    &__second {
+      background: url('../img/order/flowers2.png') center center/cover no-repeat;
+      width: 50%;
+    }
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .order {
+    &__wrapper {
+      height: 650px;
+    }
+  
+    &-form {
+      width: 60%;
+      padding: 85px 0;
+  
+      &__container {
+        max-width: 417px;
+        text-align: center;
+      }
+      &__title {
+        font-size: 32px;
+        margin: 16px 0 7px 0;
+      }
+      &__description {
+        margin-bottom: 80px;
+        font-size: 15px;
+        line-height: 20px;
+      }
+      &__inputs {
+        flex-direction: column;
+        gap: 40px;
+        margin-bottom: 40px;
+  
+        & input {
+          width: 100%;
+        }
+      }
+      &__footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+      }
+  
+      &__checkbox {
+        width: 100%;
+        & span {
+          width: auto;
+          text-align: left;
+          font-size: 15px;
+          line-height: 18px;
+        }
+      }
+  
+    }
+  }
+}
+
+
+@media (max-width: 900px) {
+  .order {
+    &__wrapper {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    &-form {
+      width: 100%;
+    }
+  
+    &-img {
+      width: 100%;
+      &__first {
+        height: 194px;
+        width: 50%;
+      }
+      &__second {
+        height: 194px;
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media (max-width: 530px) {
+  .order {
+    &-form {
+      &__container {
+        padding: 0 20px;
+      }
+      &__title {
+        font-size: 28px;
+        line-height: 32px;
+        margin: 10px 0 12px 0;
+      }
+      &__description {
+        font-size: 13px;
+      }
+      &__footer {
+        & button {
+          width: 100%;
+        }
+      }
+  
+      &__checkbox {
+        & span {
+          font-size: 12px;
+        }
+      }
     }
   }
 }
