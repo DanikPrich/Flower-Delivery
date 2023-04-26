@@ -1595,7 +1595,7 @@ input[type=checkbox]:checked::before {
     gap: 12px;
   }
 }
-.popup {
+.modal {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -1606,22 +1606,23 @@ input[type=checkbox]:checked::before {
   visibility: hidden;
   opacity: 0;
 }
-.popup-close {
+.modal-close {
   position: absolute;
+  cursor: pointer;
   top: 20px;
   right: 20px;
   z-index: 17;
   display: block;
   height: 15px;
   width: 15px;
-  background: url("../img/popup/close.svg") 0 0/contain;
+  background: url("../img/modal/close.svg") 0 0/contain;
 }
-.popup-img {
-  background: url("../img/popup/popup.jpg") center center/cover no-repeat;
+.modal-img {
+  background: url("../img/modal/modal.jpg") center center/cover no-repeat;
   width: 40%;
   height: 582px;
 }
-.popup-form {
+.modal-form {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1629,29 +1630,29 @@ input[type=checkbox]:checked::before {
   margin: 60px auto;
   padding: 0 20px;
 }
-.popup-form__title {
+.modal-form__title {
   font-size: 42px;
   line-height: 60px;
 }
-.popup-form__description {
+.modal-form__description {
   font-size: 16px;
   line-height: 24px;
 }
-.popup-form__checkbox {
+.modal-form__checkbox {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 16px;
 }
-.popup-form button {
+.modal-form button {
   width: 100%;
 }
-.popup:target {
+.modal__active {
   visibility: visible;
   opacity: 1;
 }
 
-.popup-card {
+.modal-card {
   position: relative;
   display: flex;
   max-width: 1010px;
@@ -1661,34 +1662,35 @@ input[type=checkbox]:checked::before {
 }
 
 @media (max-width: 960px) {
-  .popup-card {
+  .modal-card {
     flex-direction: column;
     max-width: 540px;
+    margin: 70px auto;
   }
-  .popup-img {
-    height: 292px;
+  .modal-img {
+    height: 220px;
     width: 100%;
   }
-  .popup-form {
+  .modal-form {
     height: 520px;
     text-align: center;
     justify-content: start;
     margin-bottom: 0;
   }
-  .popup-form__title {
+  .modal-form__title {
     font-size: 32px;
     line-height: 32px;
     margin-bottom: 10px;
   }
-  .popup-form__description {
+  .modal-form__description {
     font-size: 15px;
     line-height: 20px;
     margin-bottom: 80px;
   }
-  .popup-form__input {
+  .modal-form__input {
     margin-bottom: 40px;
   }
-  .popup-form__checkbox {
+  .modal-form__checkbox {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1696,44 +1698,44 @@ input[type=checkbox]:checked::before {
     margin-bottom: 60px;
     text-align: left;
   }
-  .popup-form button {
+  .modal-form button {
     align-self: center;
     width: 260px;
     height: 65px;
   }
 }
 @media (max-width: 460px) {
-  .popup-card {
+  .modal-card {
     flex-direction: column;
     max-width: 290px;
   }
-  .popup-img {
-    height: 160px;
+  .modal-img {
+    height: 110px;
   }
-  .popup-form {
+  .modal-form {
     height: auto;
     margin: 0;
     padding: 28px;
   }
-  .popup-form__title {
+  .modal-form__title {
     font-size: 18px;
     line-height: 60px;
   }
-  .popup-form__description {
+  .modal-form__description {
     font-size: 10px;
     line-height: 16px;
     margin-bottom: 27px;
   }
-  .popup-form__input {
+  .modal-form__input {
     margin-bottom: 30px;
   }
-  .popup-form__checkbox {
+  .modal-form__checkbox {
     gap: 22px;
     margin-bottom: 48px;
     font-size: 8px;
     line-height: 16px;
   }
-  .popup-form button {
+  .modal-form button {
     width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -54,24 +54,24 @@
   </header>
   
   <main>
-    <section class="popup" id="popup">
-      <div class="container">
-        <div class="popup-card">
-          <a href="#" class="popup-close"></a>
-          <div class="popup-img"></div>
-          <form class="popup-form">
-            <h2 class="popup-form__title">Заказать звонок</h2>
-            <div class="popup-form__description">Закажите звонок и наш менеджер свяжется с вами в ближайшее время</div>
-            <input type="text" class="popup-form__input" placeholder="Олег">
-            <input type="text" class="popup-form__input" placeholder="Номер телефона">
-            <div class="popup-form__checkbox">
-              <input type="checkbox">
-              <span>Даю свое согласия на обработку <a href="#">персональных данных</a></span>
-            </div>
-            <button class="button">Заказать звонок</button>
-          </form>
-        </div>
+    <section class="modal" id="modal">
+      <!-- <div class="container"> -->
+      <div class="modal-card">
+        <a class="modal-close" data-modal-close></a>
+        <div class="modal-img"></div>
+        <form class="modal-form">
+          <h2 class="modal-form__title">Заказать звонок</h2>
+          <div class="modal-form__description">Закажите звонок и наш менеджер свяжется с вами в ближайшее время</div>
+          <input type="text" class="modal-form__input" placeholder="Олег">
+          <input type="text" class="modal-form__input" placeholder="Номер телефона">
+          <div class="modal-form__checkbox">
+            <input type="checkbox">
+            <span>Даю свое согласия на обработку <a href="#">персональных данных</a></span>
+          </div>
+          <button class="button">Заказать звонок</button>
+        </form>
       </div>
+      <!-- </div> -->
     </section>
 
     <section class="hero">
@@ -95,7 +95,7 @@
               <img src="img/hero/email.svg" alt="" class="hero-contacts__img">
               <span class="hero-contacts__text">+7(495)7378585</span>
             </div>
-            <a class="button hero-contacts__button" href="#popup">
+            <a class="button hero-contacts__button" data-modal>
               связаться с нами
             </a>
           </div>
@@ -243,7 +243,7 @@
               <span>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке.</span>
               <span>Мы привозим цветы и растения в горшках из <strong>Эквадора, Кении, Колумбии, Чили, Голландии, Израиля</strong> и доставляем их свежими во все регионы СНГ.</span>
             </div>
-            <button class="button">связаться с нами</button>
+            <button class="button" data-modal>связаться с нами</button>
           </div>
           <img src="img/from/map.svg" alt="map" class="from-img">
           <div class="country-description">Доставка в Караганду занимает от <strong>1</strong> до <strong>2</strong> дней</div>
@@ -326,7 +326,7 @@
           </div>
 
           <div class="tariff-card-download">
-            <button class="button">Скачать прайс</button>
+            <button class="button" data-modal>Скачать прайс</button>
           </div>
 
           <div class="tariff-card">
@@ -401,6 +401,6 @@
       </div>
     </div>
   </footer>
-  <script src="js/script.js"></script>
+  <script src="js/script.js" type="text/javascript"></script>
 </body>
 </html>

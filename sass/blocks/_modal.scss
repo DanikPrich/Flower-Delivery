@@ -1,4 +1,4 @@
-.popup {
+.modal {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -11,18 +11,19 @@
 
   &-close {
     position: absolute;
+    cursor: pointer;
     top: 20px;
     right: 20px;
     z-index: 17;
     display: block;
     height: 15px;
     width: 15px;
-    background: url("../img/popup/close.svg") 0 0/contain;
+    background: url("../img/modal/close.svg") 0 0/contain;
   }
 
 
   &-img {
-    background: url("../img/popup/popup.jpg") center center/cover no-repeat;
+    background: url("../img/modal/modal.jpg") center center/cover no-repeat;
     width: 40%;
     height: 582px;
   }
@@ -57,14 +58,14 @@
     }
   }
 
-  &:target {
+  &__active {
     visibility: visible;
     opacity: 1;
   }
 
 }
 
-.popup-card {
+.modal-card {
   position: relative;
   display: flex;
   max-width: 1010px;
@@ -74,14 +75,15 @@
 }
 
 @media (max-width: 960px) {
-  .popup-card {
+  .modal-card {
     flex-direction: column;
     max-width: 540px;
+    margin: 70px auto;
   }
   
-  .popup {
+  .modal {
     &-img {
-      height: 292px;
+      height: 220px;
       width: 100%;
     }
     &-form {
@@ -125,14 +127,14 @@
 }
 
 @media (max-width: 460px) {
-  .popup-card {
+  .modal-card {
     flex-direction: column;
     max-width: 290px;
   }
   
-  .popup {
+  .modal {
     &-img {
-      height: 160px;
+      height: 110px;
     }
     &-form {
       height: auto;
